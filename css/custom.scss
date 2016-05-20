@@ -1,0 +1,194 @@
+@import 'main';
+
+/* ==========================================================================
+   Author styles
+   ========================================================================== */
+
+$sans-serif: 'Roboto',
+Arial,
+Helvetica,
+sans-serif;
+$serif: 'Libre Baskerville', serif;
+
+body {
+    color: #fff;
+    font-family: $sans-serif;
+    font-weight: 100;
+    font-size: 16px;
+    padding: 0;
+    margin: 0;
+    background: url('../img/ditchweed-bg.jpg') fixed;
+    background-size: cover;
+}
+
+.bg-changer {
+  background: url('../img/nature.jpg') fixed;
+  background-size:cover;
+  position:fixed;
+  width:100%;
+  height:100%;
+  opacity:0;
+}
+
+a {
+  color:#FC0;
+}
+h2 {
+    font-size: 1.7em;
+    font-style: italic;
+    font-weight: 200;
+    margin:40px 0 0 0;
+}
+
+.album-title {
+  margin-top:0;
+}
+
+.bgimage {
+  background:url('../img/ditchweed-bg2.jpg') fixed;
+  background-size:cover;
+  width:100%;
+  height:1200px;
+  position:absolute;
+  z-index:0;
+}
+
+.wrapper {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    //display:inline-block;
+    //overflow:hidden;
+    width: 100%;
+   //background: url('../img/ditchweed-bg2.jpg') fixed;
+}
+
+.container {
+    height: 3000px;
+    text-align: left;
+    margin: 0 auto;
+    width: 100%;
+    border: 1px solid #fff;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    background: #000;
+    margin: 0;
+    padding: 0;
+    background: url('../img/header-bg.jpg');
+    background-size: cover;
+    z-index: 2;
+    text-align: left;
+    .title {
+        margin-left: 3%;
+        font-size: 2.9em;
+        font-weight: 300;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+}
+
+.content {
+    padding: 170px 6%;
+    text-align: left;
+    position:relative;
+}
+
+.clear {
+    clear: both;
+    background: none;
+}
+
+hr {
+    color: #fff;
+    color: none;
+}
+
+ul.menu {
+    display: inline-block;
+    float: right;
+    margin-top: 0;
+    font-size: 1.3em;
+    margin-right: 3%;
+    li {
+        list-style-type: none;
+        float: left;
+        padding-left: 30px;
+    }
+}
+
+.flex-container {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    @media screen and (min-width: 1240px) {
+        width: 1240px;
+    }
+    li {
+        padding: 5px;
+        width: 100px;
+        height: 200px;
+        margin-top: 0px;
+        color: white;
+        font-weight: 100;
+        font-size: 1em;
+        text-align: center;
+        width: calc(20% - 10px);
+        margin-top: 10px;
+        cursor: pointer;
+        img {
+            margin-bottom: 10px;
+            -webkit-box-shadow: 10px 10px 31px -10px rgba(0, 0, 0, 0.75);
+            -moz-box-shadow: 10px 10px 31px -10px rgba(0, 0, 0, 0.75);
+            box-shadow: 10px 10px 31px -10px rgba(0, 0, 0, 0.75);
+        }
+        @media screen and (max-width: 900px) {
+            width: calc(25% - 10px);
+        }
+        @media screen and (max-width: 500px) {
+            width: 100%;
+        }
+    }
+  }
+
+  .social {
+    margin:0;
+    ul {
+      float:right;
+      list-style-type:none;
+      li {
+        width:40px;
+        height:40px;
+        background:#45F;
+        float:left;
+        &:first-child {
+          background:url('../img/social.png')
+        }
+        &:nth-child(2) {
+          background:url('../img/social.png') 100% 0;
+        }
+      }
+    }
+  }
+
+  .stores {
+    ul {
+      list-style-type:none;
+      li {
+        width:120px;
+        height:120px;
+        float:left;
+        padding-right:10px;
+      }
+    }
+  }
